@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from models import User,Goal,SubGoal
 import requests
 import os
 # Create your views here.
@@ -38,6 +39,8 @@ def newuser(request):
             if(response.json()['email_verified'] == "true"):
                 email = response.json()['email']
             Pname = response.json()['name']
+            PicURL = response.json()['picture']
+            u = User(Pname = Pname ,Cname = Cname, City = City, UID = userID, Email = email, PicUrl = PicURL, PhoneNumber = Phone)
             return render(request, 'tracker/signedin.html', {})
     except:
         return redirect('home')
