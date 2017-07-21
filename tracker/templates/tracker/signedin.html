@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>window.onbeforeunload = function(e){
+  gapi.auth2.getAuthInstance().signOut();
+};</script>
 </head>
 <body>
 Hi, {{Name}}
