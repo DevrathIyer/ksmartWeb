@@ -37,4 +37,4 @@ def newuser(request):
             Pname = response.json()['name']
             return render(request, 'tracker/signedin.html', {})
     except:
-        return redirect('$')
+        return redirect('home')
