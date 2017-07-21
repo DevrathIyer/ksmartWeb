@@ -15,7 +15,7 @@
     </script>
 </head>
 <body>
-<form id = "SignInForm" action="{% url 'viewuserdata' %}" method="post">
+<form id = "SignInForm" action="{% url 'newuser' %}" method="post">
     {% csrf_token %}
     <input type="hidden" id = "TokenID" name="TokenID" value="Not Logged In">
     <input type="tel" id ="PhoneNumber">

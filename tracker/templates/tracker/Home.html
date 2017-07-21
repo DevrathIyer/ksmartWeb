@@ -19,7 +19,7 @@
 {% csrf_token %}
     <input type="hidden" id = "TokenID" name="TokenID" value="Not Logged In">
 </form>
-<a href="{% url 'newuser' %}">Don't have an account?</a>
+<a href="{% url 'signup' %}">Don't have an account?</a>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 </body>
 </html>
