@@ -14,8 +14,8 @@ class User(models.Model):
 
 class Goal(models.Model):
     name = models.CharField(max_length=128)
-    date = models.DateField()
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    #date = models.DateField()
+    #User = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -23,8 +23,8 @@ class Goal(models.Model):
 
 class SubGoal(models.Model):
     name = models.CharField(max_length=128)
-    date = models.DateField()
-    Goal = models.ForeignKey(Goal, on_delete=models.CASCADE)
+    #date = models.DateField()
+    #Goal = models.ForeignKey(Goal, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
