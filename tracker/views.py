@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 import requests
 import os
 # Create your views here.
@@ -16,4 +16,6 @@ def viewuserdata(request):
             #response['auth'] = os.environ['password']
             userid = response.json()['sub']
             post_data = {'auth': os.environ['password'], 'uid': userid}
-            return render(request, 'tracker/Projects.html', {'Projects': ProjectList,'UserName':UserName})
+            return render(request, 'tracker/signedin.html', {})
+    except:
+        return redirect('Home')
