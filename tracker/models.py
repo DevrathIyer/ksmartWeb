@@ -4,7 +4,6 @@ from django.db import models
 
 class User(models.Model):
     Pname = models.CharField(max_length=128, default = "Test")
-    Cname = models.CharField(max_length=128, default = "Test")
     UID = models.CharField(max_length=128, default = "Test")
     PicUrl = models.URLField(default = "http://ksmart.herokuapp.com")
     PhoneNumber = models.PositiveIntegerField(default = 0)
