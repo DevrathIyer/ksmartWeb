@@ -15,7 +15,6 @@ def viewuserdata(request):
         if (response.json()['iss'] in ('accounts.google.com', 'https://accounts.google.com')) and (response.json()['aud'] == GoogleID):
             #response['auth'] = os.environ['password']
             userid = response.json()['sub']
-            post_data = {'auth': os.environ['password'], 'uid': userid}
             return render(request, 'tracker/signedin.html', {})
     except:
         return redirect('Home')
