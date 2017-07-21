@@ -21,5 +21,5 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^signup', views.signup, name='signup'),
     url(r'^signedin', views.viewuserdata, name='viewuserdata'),
-    url(r'^newuser', views.newuser, name='newuserdata'),
+    url(r'^newuser', views.newuser, name='newuser'),
 ]
