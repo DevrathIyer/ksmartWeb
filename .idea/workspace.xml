@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532d136c-6f1a-4bcb-b556-505bffe19783" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracker/templates/tracker/Home.html" afterPath="$PROJECT_DIR$/tracker/templates/tracker/Home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tracker/templates/tracker/NewUser.html" afterPath="$PROJECT_DIR$/tracker/templates/tracker/NewUser.html" />
     </list>
     <ignored path="ksmart.iws" />
@@ -55,21 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewUser.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NewUser.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/NewUser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/Home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="85">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -106,8 +105,8 @@
         <option value="$PROJECT_DIR$/ksmart/urls.py" />
         <option value="$PROJECT_DIR$/tracker/views.py" />
         <option value="$PROJECT_DIR$/tracker/templates/tracker/signedin.html" />
-        <option value="$PROJECT_DIR$/tracker/templates/tracker/NewUser.html" />
         <option value="$PROJECT_DIR$/tracker/templates/tracker/Home.html" />
+        <option value="$PROJECT_DIR$/tracker/templates/tracker/NewUser.html" />
       </list>
     </option>
   </component>
@@ -486,18 +485,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/NewUser.html">
+    <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/Home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="6" selection-end-column="124" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/Home.html">
+    <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/NewUser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>

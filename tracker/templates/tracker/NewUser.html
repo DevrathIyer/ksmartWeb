@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>KSmart</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="734656398511-bvq0eii3pavpasv7lj8359u6s6n41gvg.apps.googleusercontent.com">
     <script>
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
@@ -20,5 +22,6 @@
     <input type="text" id ="CName">
     <input type="Text" id ="City">
 </form>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
 </body>
 </html>
