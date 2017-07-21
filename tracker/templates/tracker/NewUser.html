@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script>
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            var id_token = googleUser.getAuthResponse().id_token;
+            document.getElementById("TokenID").value = id_token;
+            document.getElementById("SignInForm").submit();
+        }
+    </script>
 </head>
 <body>
-<form>
+<form id = "SignInForm" action="{% url 'viewuserdata' %}" method="post">
+    {% csrf_token %}
     <input type="hidden" id = "TokenID" name="TokenID" value="Not Logged In">
     <input type="tel" id ="PhoneNumber">
     <input type="text" id ="CName">
