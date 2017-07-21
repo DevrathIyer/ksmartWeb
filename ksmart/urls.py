@@ -19,6 +19,7 @@ from tracker import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
-    url(r'^signup', views.newuser, name='newuser'),
+    url(r'^signup', views.signup, name='signup'),
     url(r'^signedin', views.viewuserdata, name='viewuserdata'),
+    url(r'^newuser', views.newuser, name='newuserdata'),
 ]
