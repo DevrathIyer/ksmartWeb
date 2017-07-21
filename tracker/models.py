@@ -5,6 +5,7 @@ from django.db import models
 class User(models.Model):
     Pname = models.CharField(max_length=128, default = "Test")
     UID = models.CharField(max_length=128, default = "Test")
+    Email = models.EmailField(default="")
     PicUrl = models.URLField(default = "http://ksmart.herokuapp.com")
     PhoneNumber = models.PositiveIntegerField(default = 0)
 
@@ -13,6 +14,8 @@ class User(models.Model):
 
 class Goal(models.Model):
     name = models.CharField(max_length=128)
+    date = models.DateField()
+    User = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -20,6 +23,8 @@ class Goal(models.Model):
 
 class SubGoal(models.Model):
     name = models.CharField(max_length=128)
+    date = models.DateField()
+    Goal = models.ForeignKey(Goal, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
