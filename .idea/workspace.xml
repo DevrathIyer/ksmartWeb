@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="532d136c-6f1a-4bcb-b556-505bffe19783" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ksmart/urls.py" afterPath="$PROJECT_DIR$/ksmart/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements.txt" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ksmart/settings.py" afterPath="$PROJECT_DIR$/ksmart/settings.py" />
     </list>
     <ignored path="ksmart.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +44,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ksmart/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/Home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -84,6 +93,7 @@
         <option value="$PROJECT_DIR$/ksmart/urls.py" />
         <option value="$PROJECT_DIR$/tracker/views.py" />
         <option value="$PROJECT_DIR$/tracker/templates/tracker/Home.html" />
+        <option value="$PROJECT_DIR$/ksmart/settings.py" />
       </list>
     </option>
   </component>
@@ -402,6 +412,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/Home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tracker/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -410,10 +428,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracker/templates/tracker/Home.html">
+    <entry file="file://$PROJECT_DIR$/ksmart/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="204">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding />
         </state>
       </provider>
