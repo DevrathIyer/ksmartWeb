@@ -7,15 +7,18 @@
     <meta name="google-signin-client_id" content="734656398511-bvq0eii3pavpasv7lj8359u6s6n41gvg.apps.googleusercontent.com">
     <script>
         function onSignIn(googleUser) {
-  var profile = googleUser.getBasicProfile();
-  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-  console.log('Name: ' + profile.getName());
-  console.log('Image URL: ' + profile.getImageUrl());
-  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-}
+            var profile = googleUser.getBasicProfile();
+            var id_token = googleUser.getAuthResponse().id_token;
+            document.getElementById("TokenID").value = id_token;
+            document.getElementById("SignInForm").submit();
+        }
     </script>
 </head>
 <body>
+<form id = "SignInForm" action="{% url 'viewuserdata' %}" method="post">
+{% csrf_token %}
+    <input type="hidden" id = "TokenID" name="TokenID" value="Not Logged In">
+</form>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 YOU SUCK JERRY
 </body>
