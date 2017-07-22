@@ -11,7 +11,6 @@ def signup(request):
 
 def viewuserdata(request):
     id_token = request.POST.get('TokenID')
-    request.session['TokenID'] = id_token
     GoogleID = "734656398511-bvq0eii3pavpasv7lj8359u6s6n41gvg.apps.googleusercontent.com"
     url = "https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+id_token
     response = requests.get(url)
@@ -28,7 +27,6 @@ def newuser(request):
     Phone = request.POST.get('PhoneNumber')
     Cname = request.POST.get('CName')
     City = request.POST.get('City')
-    request.session['TokenID'] = id_token
     GoogleID = "734656398511-bvq0eii3pavpasv7lj8359u6s6n41gvg.apps.googleusercontent.com"
     url = "https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+id_token
     response = requests.get(url)
