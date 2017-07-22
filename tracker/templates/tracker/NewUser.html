@@ -18,9 +18,15 @@
 <form id = "SignInForm" action="{% url 'newuser' %}" method="post">
     {% csrf_token %}
     <input type="hidden" id = "TokenID" name="TokenID" value="Not Logged In">
-    <input type="tel" id ="PhoneNumber">
-    <input type="text" id ="CName">
-    <input type="Text" id ="City">
+    <div>
+    Phone:
+   (<input type="text" name="phone-1" maxlength="3">)
+   <input type="text" name="phone-2" maxlength="3">-
+   <input type="text" name="phone-3" maxlength="4">
+</div>
+     Child's Name: <input type="text" id ="CName">
+     City: <input type="Text" id ="City">
+     State: <input type="Text" id ="State">
 </form>
 <div class="g-signin2" data-onsuccess="onSignIn"></div>
 </body>
