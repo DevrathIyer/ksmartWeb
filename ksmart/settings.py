@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'echelonportal.wsgi.application'
+WSGI_APPLICATION = 'ksmart.wsgi.application'
 
 
 # Database
