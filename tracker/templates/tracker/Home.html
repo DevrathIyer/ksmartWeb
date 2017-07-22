@@ -12,6 +12,9 @@
             document.getElementById("TokenID").value = id_token;
             document.getElementById("SignInForm").submit();
         }
+        window.onbeforeunload = function(e){
+  gapi.auth2.getAuthInstance().signOut();
+};
     </script>
 </head>
 <body>
