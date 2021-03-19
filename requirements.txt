@@ -12,7 +12,7 @@ html5lib==0.9999999
 hyperchamber==0.2.8
 idna==2.5
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 Markdown==2.6.8
 MarkupSafe==1.0
 numpy==1.13.0
