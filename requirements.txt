@@ -8,7 +8,7 @@ Django==1.11.2
 Flask==0.12.2
 Flask-Cors==3.0.3
 gunicorn==19.7.1
-html5lib==0.9999999
+html5lib==0.999999999
 hyperchamber==0.2.8
 idna==2.5
 itsdangerous==0.24
